@@ -1,0 +1,23 @@
+{
+  "name": "sample-mappings",
+  "version": "0.0.1",
+  "description": "Mappings for hydra-processor",
+  "main": "lib/mappings/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf lib && tsc --build tsconfig.json && copyfiles generated/**/*.json lib/mappings",
+    "lint": "echo \"Skippinng\"",
+    "clean": "rimraf lib"
+  },
+  "dependencies": {
+    "@joystream/hydra-common": "3.1.0-alpha.7",
+    "@polkadot/types": "~2.10.2-7",
+    "warthog": "2.36.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^3.8"
+  }
+}
